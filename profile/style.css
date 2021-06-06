@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+a {
+    /* サイト内のリンクに下線が表示されないようにする */
+    text-decoration: none;
+}
+img {
+    /* 画像が画面の横幅からはみ出るのを防ぐ */
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+
+/* h1タグ用 */
+.site-title {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+/* aタグのリンク範囲を親要素のサイズに広げる */
+.site-title a {
+    display: block;
+}
+
+/* h2タグ用 */
+.section-title {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: solid 1px #383e45;
+}
+
+/* h3タグ用 */
+.content-title {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* 画面の最大幅を指定 */
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/* ----------------------------------------
+    ヘッダー
+-----------------------------------------*/
+#header {
+    display: flex; /* h1とnavを横並びに配置する */
+    justify-content: space-between; /* 両端に揃える */
+    align-items: center; /* 高さを中央で揃える */
+    margin:  0 auto;
+}
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    margin-left: 30px;
+}
+#header li a {
+    color: #24202e;
+}
+#header li a:hover {
+    opacity: 0.7; /* メニューにマウスをのせた際に少し透過する */
+}
+
+/* --------------------------------------------------------
+    mainvisual
+----------------------------------------------------------*/
+#mainvisual {
+    margin-bottom: 80px;
+}
+#marginvisual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+    /* --------------------------------------------------------
+        mainvisual
+    ----------------------------------------------------------*/
+    #mainvisual img {
+        height: calc(100vh - 60px);
+    }
+
+}
+
+/*-------------------------------------------------------------
+    About
+-------------------------------------------------------------*/
+#about .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about img {
+    width: 100px; /*　画像の丸のサイズを指定 */
+    height: 100px;
+    border-radius: 50px; /* 画像を丸く切り取る */
+    margin-right: 30px;
+}
+#about .text {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    /*-------------------------------------------------------------
+        About
+    -------------------------------------------------------------*/
+    #about .content {
+        flex-direction: column;
+    }
+    #about img {
+        margin-right: 0;
+    }
+}
+
+/*-------------------------------------------
+    Bicycle
+-------------------------------------------*/
+#bycycle ul {
+    display: flex;
+    justify-content: space-between; /* 両端でそろえる */
+}
+#bycycle li {
+    width: 32%;
+}
+
+@media screen and (max-width: 600px) {
+    /*-------------------------------------------
+        Bicycle
+    -------------------------------------------*/
+    #bycycle ul {
+        flex-direction: column;
+    }
+    #bycycle li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/*-------------------------------------------
+    footer
+-------------------------------------------*/
+#footer {
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+}
