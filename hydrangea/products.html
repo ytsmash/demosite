@@ -3,12 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HYDRANGEA | PRODUCTS</title>
+    <title>HYDRANGEA | HOME</title>
     <meta name="description" content="this is demo site by team hydrangea. we are nice team.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
 </head>
 
 <body>
@@ -17,74 +19,51 @@
             <a href="index.html" class="pushbutton">HYDRANGEA</a>
         </h1>
         <nav id="nav">
-            <a href="" class="pushbutton">PRODUCTS</a>
-            <a href="" class="pushbutton">HISTORY</a>
-            <a href="" class="pushbutton">CART</a>
-            <a href="" class="pushbutton">LOG OUT</a>
+            <a href="" class="pushbutton">LOGIN</a>
+            <a href="" class="pushbutton">SIGN UP</a>
         </nav>
     </header>
 
-    <main>
-        <div id="top" class="wrapper">
-            <ul class="productList">
-                <li>
-                    <a href="">
-                        <img src="" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item2.html">
-                        <img src="img/item2.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item3.html">
-                        <img src="img/item3.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item4.html">
-                        <img src="img/item4.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item5.html">
-                        <img src="img/item5.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item6.html">
-                        <img src="img/item6.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item7.html">
-                        <img src="img/item7.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="item8.html">
-                        <img src="img/item8.jpg" alt="">
-                        <p>プロダクトタイトルプロダクトタイトル</p>
-                        <p>&yen;99,999 +tax</p>
-                    </a>
-                </li>
-            </ul>
+    <main id="main">
+        <div class="mainvisual"></div>
+        <div class="wrapper">
+            <section id="about">
+                <div class="text">
+                    <div class="section-title">ABOUT</div>
+                    <p>　このサイトは、東北インフォメーション・システムズ
+                        の2021年新入社員研修のJAVA総合演習にて、Eチーム
+                        「HYDRANGEA」によって制作されたサイトです。</p>
+                    <p>　「HYDRANGEA」とはアジサイを意味する英単語で、このサイトを作成した期間が6月の梅雨の時期だったことから名付けました。</p>
+                </div>
+                <div class="images">
+                    <div>
+                        <img id="bigimg" src="image/azisai1.jpg" alt="アジサイ">
+                    </div>
+                    <ul>
+                        <li><img src="image/azisai1.jpg" class="thumb" data-image="image/azisai1.jpg"></li>
+                        <li><img src="image/azisai2.jpg" class="thumb" data-image="image/azisai2.jpg"></li>
+                        <li><img src="image/azisai3.jpg" class="thumb" data-image="image/azisai3.jpg"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="member">
+                <div class="images">
+
+                </div>
+
+                <div class="text">
+                    <div class="section-title">MEMBER</div>
+                    <p>HARUKA TAKANASHI</p>
+                    <p>SORA OOBA</p>
+                    <p>ASAKA YOSHIDA</p>
+                    <p>TATSUMI YAMAMOTO</p>
+                    <p>AKITSUGU SATOU</p>
+                </div>
+            </section>
+
         </div>
+
 
     </main>
 
@@ -94,7 +73,6 @@
         </div>
     </footer>
     <script src="./script/main.js"></script>
-
 </body>
 
 </html>
