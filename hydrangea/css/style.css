@@ -44,19 +44,7 @@ li {
 #header nav {
     display: flex;
 }
-/* ==== main ==== */
-/* == index.html == */
-/* メインビジュアル */
-.mainvisual {
-    margin: 0 auto;
-    padding-top: 50px;
-    text-align: center;
-    height: 600px;
-    background-image: url(../image/mainvisual.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 /* ログインボタン・新規登録ボタン */
 .pushbutton {
     /* 円の形状 */
@@ -94,6 +82,20 @@ li {
     transform: translate(-50%, -50%) scale(1);
     border-color: #333;
 }
+/* ==== main ==== */
+
+/* == index.html == */
+/* メインビジュアル */
+.mainvisual {
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    height: 600px;
+    background-image: url(../image/mainvisual.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* == aboutとmember == */
 #about, #member{
@@ -130,6 +132,29 @@ li {
 }
 
 #member p {
+    text-align: center;
+}
+
+/* == products == */
+#top {
+    padding-top: 80px;
+    padding-bottom: 160px;
+}
+.productList {
+    display: flex;
+    flex-wrap: wrap; /* 子要素を横一列に配置 */
+    justify-content: space-between; /*各アイテムを均等に配置し最初のアイテムは先頭に寄せ、最後のアイテムは末尾に寄せる */
+}
+.productList li {
+    width: 23%;
+    margin-bottom: 40px;
+}
+.productList img {
+    margin-bottom: 10px;
+    vertical-align: top; /* 要素と子孫要素の上端を行全体の上端に揃えて画像の下の余白を消す */
+}
+.productList p {
+    font-size: 0.75rem;
     text-align: center;
 }
 /* ==== footer ==== */
