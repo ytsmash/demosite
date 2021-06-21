@@ -11,6 +11,7 @@ img {
 body {
     margin: 0 auto 0 auto;
     font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
 }
 .wrapper {
     max-width: 1000px;
@@ -22,6 +23,10 @@ a {
 
 li {
     list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 .section-title {
     font-size: 1.125rem;
@@ -45,9 +50,9 @@ li {
     display: flex;
 }
 
-/* ログインボタン・新規登録ボタン */
+/* ボタン */
 .pushbutton {
-    /* 円の形状 */
+    /* ボタンの形状 */
     position: relative;
     width: 130px;
     height: 50px;
@@ -64,6 +69,7 @@ li {
     align-items: center;
     justify-content: center;
 }
+/* ボタンの枠線 */
 .pushbutton::after {
     content: "";
     position: absolute;
@@ -82,6 +88,7 @@ li {
     transform: translate(-50%, -50%) scale(1);
     border-color: #333;
 }
+
 /* ==== main ==== */
 
 /* == index.html == */
@@ -97,7 +104,7 @@ li {
     background-repeat: no-repeat;
 }
 
-/* == aboutとmember == */
+/* aboutとmember */
 #about, #member{
     display: flex;
     padding-top: 20px;
@@ -135,7 +142,7 @@ li {
     text-align: center;
 }
 
-/* == products == */
+/* == products.html == */
 #top {
     padding-top: 80px;
     padding-bottom: 160px;
@@ -157,10 +164,11 @@ li {
     font-size: 0.75rem;
     text-align: center;
 }
+
 /* ==== footer ==== */
 #footer {
     margin: 20px auto;
-    font-size: 0.8rem;
+    font-size: 0.625rem;
     text-align: center;
 }
 #footer p {
